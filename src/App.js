@@ -11,7 +11,7 @@ import About from './Components/About';
 import LoadingBar from 'react-top-loading-bar'
 
 const App = () => {
-  const apikey= "6f261dbc43624cf592a68eb702b82fb2";
+  const apikey= process.env.REACT_APP_NEWS_API;
   
   const [progress, setProgress] = useState(0);
   const [mode, setMode] = useState('light');
